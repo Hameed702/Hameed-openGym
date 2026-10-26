@@ -2,6 +2,7 @@
 export default {
   'Confirm': 'تأكيد',
   'Cancel': 'إلغاء',
+  'You have {0} training days planned. Your goal is 5.': 'لديك {0} أيام تدريب مجدولة، وهدفك 5 أيام.',
   'Press back again to exit': 'اضغط زر الرجوع مرة أخرى للخروج',
   'Delete': 'حذف',
   'Copy set': 'نسخ',
