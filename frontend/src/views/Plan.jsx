@@ -252,7 +252,8 @@ function Schedule({ S, update, nav, mode }) {
   const ws = weekStartOf(S)
   const todayDow = new Date().getDay()
   const routineOf = id => S.routines.find(x => x.id === id)
-  const dayRoutines = d => [].concat(S.week[d] || []).map(routineOf).filter(Boolean)const trainingDays = weekOrder(ws).filter(d => dayRoutines(d).length > 0).length
+  const dayRoutines = d => [].concat(S.week[d] || []).map(routineOf).filter(Boolean)
+  const trainingDays = weekOrder(ws).filter(d => dayRoutines(d).length > 0).length
   // One weekday: what is on it at a glance, and a tap to change it (dayAssignSheet picks one
   // routine, several for a combined day, or a rest day).
   const dayRow = (d, rs = dayRoutines(d)) => {
