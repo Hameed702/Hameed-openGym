@@ -304,6 +304,11 @@ function Schedule({ S, update, nav, mode }) {
 
     {mode === 'week' ? <>
       <h4 className="sec">{t('This week')}</h4>
+      {trainingDays !== 5 && (
+  <p className="sect-f">
+    {t('You have {0} training days planned. Your goal is 5.', trainingDays)}
+  </p>
+)}
       <div className="list plan-week">{weekOrder(ws).map(d => dayRow(d))}</div>
       <p className="sect-f">{t('Want two routines on one day? Tap the day and pick both.')}</p>
     </> : <div className="rotation">
